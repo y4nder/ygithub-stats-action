@@ -14,38 +14,38 @@
             animation: typewriter 0.15s ease-out forwards;
         }
         .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
-        .title { font-size: 10px; font-weight: 700; fill: #d79921; }
-        .header { font-size: 12px; font-weight: 700; fill: #d79921; }
-        .label { font-size: 11px; fill: #7c6f64; }
-        .value { font-size: 11px; font-weight: 700; fill: #d4be98; }
+        .title { font-size: 10px; font-weight: 700; fill: #88c0d0; }
+        .header { font-size: 12px; font-weight: 700; fill: #88c0d0; }
+        .label { font-size: 11px; fill: #4c566a; }
+        .value { font-size: 11px; font-weight: 700; fill: #eceff4; }
         .streak { font-size: 11px; fill: #fb8c00; }
-        .hint { font-size: 9px; fill: #7c6f64; }
-        .key { fill: #d79921; }
-        .total { font-size: 16px; font-weight: 700; fill: #b8bb26; }
+        .hint { font-size: 9px; fill: #4c566a; }
+        .key { fill: #88c0d0; }
+        .total { font-size: 16px; font-weight: 700; fill: #a3be8c; }
         .bar-text { font-size: 9px; }
-        .bar-fill { fill: #b8bb26; animation: bar-load 1s ease-out forwards; }
-        .bar-empty { fill: #7c6f64; opacity: 0.5; }
+        .bar-fill { fill: #a3be8c; animation: bar-load 1s ease-out forwards; }
+        .bar-empty { fill: #4c566a; opacity: 0.5; }
     </style>
 
     <!-- Background -->
-    <rect x="1" y="1" width="418" height="248" rx="0" fill="#161b22"/>
+    <rect x="1" y="1" width="418" height="248" rx="0" fill="#2e3440"/>
 
     <!-- Left/Right borders -->
-    <rect x="8" y="14" width="1.5" height="222" fill="#3c3836"/>
-    <rect x="410" y="14" width="1.5" height="222" fill="#3c3836"/>
+    <rect x="8" y="14" width="1.5" height="222" fill="#88c0d0"/>
+    <rect x="410" y="14" width="1.5" height="222" fill="#88c0d0"/>
 
     <!-- Top/Bottom borders -->
-    <rect x="8" y="6" width="404" height="1.5" fill="#3c3836"/>
-    <rect x="8" y="242" width="404" height="1.5" fill="#3c3836"/>
+    <rect x="8" y="6" width="404" height="1.5" fill="#88c0d0"/>
+    <rect x="8" y="242" width="404" height="1.5" fill="#88c0d0"/>
 
     <!-- Corner pixels -->
-    <rect x="6" y="6" width="4" height="4" rx="1" fill="#3c3836"/>
-    <rect x="410" y="6" width="4" height="4" rx="1" fill="#3c3836"/>
-    <rect x="6" y="240" width="4" height="4" rx="1" fill="#3c3836"/>
-    <rect x="410" y="240" width="4" height="4" rx="1" fill="#3c3836"/>
+    <rect x="6" y="6" width="4" height="4" rx="1" fill="#88c0d0"/>
+    <rect x="410" y="6" width="4" height="4" rx="1" fill="#88c0d0"/>
+    <rect x="6" y="240" width="4" height="4" rx="1" fill="#88c0d0"/>
+    <rect x="410" y="240" width="4" height="4" rx="1" fill="#88c0d0"/>
 
     <!-- Title bar -->
-    <rect x="150" y="2" width="120" height="12" fill="#161b22"/>
+    <rect x="150" y="2" width="120" height="12" fill="#2e3440"/>
     <text x="210" y="12" text-anchor="middle" class="mono title">┤ y4nder ├</text>
 
     <!-- Contributions Section -->
@@ -65,21 +65,21 @@
     <text x="25" y="110" class="mono label">COMMITS</text>
         <text x="95" y="110" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0s">4</tspan><tspan class="typewriter-char" style="animation-delay: 0.08s">0</tspan><tspan class="typewriter-char" style="animation-delay: 0.16s">1</tspan></text>
 
-        <text x="140" y="109" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0s">⣿⣿⣿⣿</tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀</tspan></text>
+        <text x="140" y="109" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#a3be8c" style="animation-delay: 0s">⣿⣿⣿⣿</tspan><tspan class="bar-empty" fill="#4c566a" opacity="0.5">⣀⣀⣀⣀⣀</tspan></text>
     <text x="25" y="130" class="mono label">PRS</text>
         <text x="95" y="130" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0.15s">2</tspan><tspan class="typewriter-char" style="animation-delay: 0.23s">2</tspan><tspan class="typewriter-char" style="animation-delay: 0.31s">7</tspan></text>
 
-        <text x="140" y="129" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0.15s">⣿⣿⣿⣿⣿⣿⣿⣿⣿</tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5"></tspan></text>
+        <text x="140" y="129" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#a3be8c" style="animation-delay: 0.15s">⣿⣿⣿⣿⣿⣿⣿⣿⣿</tspan><tspan class="bar-empty" fill="#4c566a" opacity="0.5"></tspan></text>
 
     <!-- Right Column Stats -->
     <text x="210" y="110" class="mono label">ISSUES</text>
         <text x="280" y="110" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0.3s">2</tspan></text>
 
-        <text x="325" y="109" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0.3s"></tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
+        <text x="325" y="109" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#a3be8c" style="animation-delay: 0.3s"></tspan><tspan class="bar-empty" fill="#4c566a" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
     <text x="210" y="130" class="mono label">REVIEWS</text>
         <text x="280" y="130" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0.45000002s">3</tspan></text>
 
-        <text x="325" y="129" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0.45000002s"></tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
+        <text x="325" y="129" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#a3be8c" style="animation-delay: 0.45000002s"></tspan><tspan class="bar-empty" fill="#4c566a" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
 
     <!-- Streak Section -->
     <text x="20" y="160" class="mono header">- Streak -------------------------------------------</text>
@@ -97,7 +97,7 @@
 
     <!-- Streak Visualization -->
     <text x="25" y="210" class="mono label">ACTIVITY</text>
-    <text x="95" y="209" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#fb8c00" style="animation-delay: 0.6s"></tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
+    <text x="95" y="209" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#fb8c00" style="animation-delay: 0.6s"></tspan><tspan class="bar-empty" fill="#4c566a" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
 
     <!-- Footer hint -->
     <text x="210" y="230" text-anchor="middle" class="mono hint">
