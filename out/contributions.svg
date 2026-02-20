@@ -1,0 +1,108 @@
+<svg width="420" height="250" viewBox="0 0 420 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+        @keyframes bar-load {
+            from { clip-path: inset(0 100% 0 0); }
+            to { clip-path: inset(0 0 0 0); }
+        }
+        @keyframes typewriter {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .typewriter-char {
+            opacity: 0;
+            animation: typewriter 0.15s ease-out forwards;
+        }
+        .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+        .title { font-size: 10px; font-weight: 700; fill: #d79921; }
+        .header { font-size: 12px; font-weight: 700; fill: #d79921; }
+        .label { font-size: 11px; fill: #7c6f64; }
+        .value { font-size: 11px; font-weight: 700; fill: #d4be98; }
+        .streak { font-size: 11px; fill: #fb8c00; }
+        .hint { font-size: 9px; fill: #7c6f64; }
+        .key { fill: #d79921; }
+        .total { font-size: 16px; font-weight: 700; fill: #b8bb26; }
+        .bar-text { font-size: 9px; }
+        .bar-fill { fill: #b8bb26; animation: bar-load 1s ease-out forwards; }
+        .bar-empty { fill: #7c6f64; opacity: 0.5; }
+    </style>
+
+    <!-- Background -->
+    <rect x="1" y="1" width="418" height="248" rx="0" fill="#161b22"/>
+
+    <!-- Left/Right borders -->
+    <rect x="8" y="14" width="1.5" height="222" fill="#3c3836"/>
+    <rect x="410" y="14" width="1.5" height="222" fill="#3c3836"/>
+
+    <!-- Top/Bottom borders -->
+    <rect x="8" y="6" width="404" height="1.5" fill="#3c3836"/>
+    <rect x="8" y="242" width="404" height="1.5" fill="#3c3836"/>
+
+    <!-- Corner pixels -->
+    <rect x="6" y="6" width="4" height="4" rx="1" fill="#3c3836"/>
+    <rect x="410" y="6" width="4" height="4" rx="1" fill="#3c3836"/>
+    <rect x="6" y="240" width="4" height="4" rx="1" fill="#3c3836"/>
+    <rect x="410" y="240" width="4" height="4" rx="1" fill="#3c3836"/>
+
+    <!-- Title bar -->
+    <rect x="150" y="2" width="120" height="12" fill="#161b22"/>
+    <text x="210" y="12" text-anchor="middle" class="mono title">┤ y4nder ├</text>
+
+    <!-- Contributions Section -->
+    <text x="20" y="35" class="mono header">- Contributions ------------------------------------</text>
+
+    <text x="25" y="60" class="mono label">TOTAL</text>
+    <text x="90" y="60" class="mono total"><tspan class="typewriter-char" style="animation-delay: 0s">1</tspan><tspan class="typewriter-char" style="animation-delay: 0.08s">0</tspan><tspan class="typewriter-char" style="animation-delay: 0.16s">7</tspan><tspan class="typewriter-char" style="animation-delay: 0.24s">2</tspan></text>
+
+    <text x="195" y="60" class="mono label">
+        contributions this year
+    </text>
+
+    <!-- Activity Section -->
+    <text x="20" y="85" class="mono header">- Activity -----------------------------------------</text>
+
+    <!-- Left Column Stats -->
+    <text x="25" y="110" class="mono label">COMMITS</text>
+        <text x="95" y="110" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0s">4</tspan><tspan class="typewriter-char" style="animation-delay: 0.08s">0</tspan><tspan class="typewriter-char" style="animation-delay: 0.16s">1</tspan></text>
+
+        <text x="140" y="109" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0s">⣿⣿⣿⣿</tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀</tspan></text>
+    <text x="25" y="130" class="mono label">PRS</text>
+        <text x="95" y="130" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0.15s">2</tspan><tspan class="typewriter-char" style="animation-delay: 0.23s">2</tspan><tspan class="typewriter-char" style="animation-delay: 0.31s">7</tspan></text>
+
+        <text x="140" y="129" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0.15s">⣿⣿⣿⣿⣿⣿⣿⣿⣿</tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5"></tspan></text>
+
+    <!-- Right Column Stats -->
+    <text x="210" y="110" class="mono label">ISSUES</text>
+        <text x="280" y="110" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0.3s">2</tspan></text>
+
+        <text x="325" y="109" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0.3s"></tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
+    <text x="210" y="130" class="mono label">REVIEWS</text>
+        <text x="280" y="130" class="mono value"><tspan class="typewriter-char" style="animation-delay: 0.45000002s">3</tspan></text>
+
+        <text x="325" y="129" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#b8bb26" style="animation-delay: 0.45000002s"></tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
+
+    <!-- Streak Section -->
+    <text x="20" y="160" class="mono header">- Streak -------------------------------------------</text>
+
+    <text x="25" y="185" class="mono streak">○</text>
+        <text x="43" y="185" class="mono label">CURRENT</text>
+        <text x="100" y="185" class="mono streak"><tspan class="typewriter-char" style="animation-delay: 0.75s">0</tspan></text>
+
+        <text x="125" y="185" class="mono streak"> days</text>
+    <text x="210" y="185" class="mono streak">●</text>
+        <text x="228" y="185" class="mono label">LONGEST</text>
+        <text x="285" y="185" class="mono streak"><tspan class="typewriter-char" style="animation-delay: 0.90000004s">1</tspan><tspan class="typewriter-char" style="animation-delay: 0.98s">5</tspan></text>
+
+        <text x="310" y="185" class="mono streak"> days</text>
+
+    <!-- Streak Visualization -->
+    <text x="25" y="210" class="mono label">ACTIVITY</text>
+    <text x="95" y="209" class="mono bar-text" xml:space="preserve"><tspan class="bar-fill" fill="#fb8c00" style="animation-delay: 0.6s"></tspan><tspan class="bar-empty" fill="#7c6f64" opacity="0.5">⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀</tspan></text>
+
+    <!-- Footer hint -->
+    <text x="210" y="230" text-anchor="middle" class="mono hint">
+        <tspan class="key">[C]</tspan> Contrib
+        <tspan dx="10" class="key">[S]</tspan> Streak
+        <tspan dx="10" class="key">[T]</tspan> Theme
+    </text>
+</svg>

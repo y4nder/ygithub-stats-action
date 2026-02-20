@@ -1,0 +1,29 @@
+name: "GitHub Stats Generator"
+description: "Generate GitHub stats SVG cards for README"
+
+inputs:
+  username:
+    description: "GitHub username"
+    required: true
+  card:
+    description: "Card type: stats, languages, contributions"
+    required: false
+    default: "stats"
+  theme:
+    description: "Theme (light, dark, dracula, nord, gruvbox, tokyonight, catppuccin, terminal)"
+    required: false
+    default: "dark"
+  output:
+    description: "Output file path (defaults to <card>.svg)"
+    required: false
+  token:
+    description: "GitHub token (defaults to GITHUB_TOKEN)"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "bar-chart-2"
+  color: "blue"
