@@ -11,17 +11,21 @@ fn main() -> anyhow::Result<()> {
 
     let theme_name = std::env::var("INPUT_THEME").unwrap_or_else(|_| "dark".into());
     let card_type = std::env::var("INPUT_CARD").unwrap_or_else(|_| "stats".into());
-    let output_path = std::env::var("INPUT_OUTPUT").unwrap_or_else(|_| {
-        match card_type.as_str() {
-            "languages" => "languages.svg".into(),
-            "contributions" => "contributions.svg".into(),
-            _ => "stats.svg".into(),
-        }
+    let output_path = std::env::var("INPUT_OUTPUT").unwrap_or_else(|_| match card_type.as_str() {
+        "languages" => "languages.svg".into(),
+        "contributions" => "contributions.svg".into(),
+        _ => "stats.svg".into(),
     });
 
     let token = std::env::var("INPUT_TOKEN")
-        .or_else(|_| std::env::var("GITHUB_TOKEN"))
-        .map_err(|_| anyhow::anyhow!("Missing token (INPUT_TOKEN or GITHUB_TOKEN)"))?;
+        .ok()
+        .filter(|t| !t.trim().is_empty())
+        .or_else(|| {
+            std::env::var("GITHUB_TOKEN")
+                .ok()
+                .filter(|t| !t.trim().is_empty())
+        })
+        .ok_or_else(|| anyhow::anyhow!("Missing token (INPUT_TOKEN or GITHUB_TOKEN)"))?;
 
     // Build HTTP client
     let client = reqwest::blocking::Client::builder()
