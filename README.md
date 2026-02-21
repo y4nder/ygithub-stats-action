@@ -1,6 +1,13 @@
-# GitHub Stats Generator Action
+# GitHub Stats Generator Action 🦀
 
-[![Rust](https://github.com/y4nder/ygithub-stats-action/actions/workflows/rust.yml/badge.svg)](https://github.com/y4nder/ygithub-stats-action/actions/workflows/rust.yml)
+![language-Rust](https://img.shields.io/badge/language-Rust-orange)
+![type-GitHub_Action](https://img.shields.io/badge/type-GitHub_Action-blue)
+![status-active](https://img.shields.io/badge/status-active-yellow)
+
+**Author:** Yander
+*(Leander Lorenz B. Lubguban)*
+
+---
 
 A GitHub Action written in Rust that generates dynamic, TUI-inspired SVG cards for your GitHub profile. Showcase your stats, top languages, and contribution history with beautiful, customizable themes.
 
